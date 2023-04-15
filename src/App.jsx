@@ -1,9 +1,13 @@
-import { Header } from 'pages';
+import { NavBar } from 'components';
+import { Home } from 'pages';
 
 function App() {
   return (
-    <div className='App'>
-      <Header />
+    <div className='flex bg-dark-color h-screen w-full'>
+      <NavBar />
+      <div className='h-screen w-full p-10'>
+        <Home />
+      </div>
     </div>
   );
 }
