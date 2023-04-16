@@ -1,1 +1,1 @@
-export { Home, HomeContent } from './Home';
+export { Home, HomeContent, Social } from './Home';

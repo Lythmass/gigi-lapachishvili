@@ -6,7 +6,7 @@ const Home = (props) => {
   const scope = useHome(props);
 
   return (
-    <div className='h-full pb-16'>
+    <div className='h-full pb-20'>
       <motion.img
         ref={scope}
         onClick={() => props.setOpenNavBar(true)}

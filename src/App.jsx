@@ -1,17 +1,11 @@
 import { NavBar } from 'components';
 import { ParticlesConfig } from 'config';
 import { Home } from 'pages';
-import { useState } from 'react';
 import Particles from 'react-particles';
-import { loadFull } from 'tsparticles';
-import { useCallback } from 'react';
+import { useApp } from 'hooks';
 
 function App() {
-  const [openNavBar, setOpenNavBar] = useState(false);
-
-  const particlesInit = useCallback(async (engine) => {
-    await loadFull(engine);
-  }, []);
+  const { openNavBar, setOpenNavBar, particlesInit } = useApp();
 
   return (
     <div className='flex bg-dark-color h-screen w-full overflow-x-hidden relative'>

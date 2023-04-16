@@ -3,7 +3,7 @@ export const NavBarItem = (props) => {
     <div className='flex gap-2 items-center'>
       <img
         className='w-5 h-5'
-        src={`images/${props.img}-red.png`}
+        src={`images/${props.img}.png`}
         alt={props.title}
       />
       <h1
