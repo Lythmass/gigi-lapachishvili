@@ -8,7 +8,7 @@ export const NavBarItem = (props) => {
       />
       <h1
         after={props.title}
-        className='after:content-[attr(after)] after:capitalize after:text-crimson after:absolute after:left-0 after:top-0 after:w-0 after:overflow-hidden after:hover:w-full after:transition-all after:whitespace-nowrap relative cursor-pointer capitalize text-banana transition-all text-lg font-bold'
+        className='after:content-[attr(after)] after:capitalize after:text-crimson after:absolute after:left-0 after:top-0 after:w-0 after:overflow-hidden after:hover:w-full after:transition-all after:whitespace-nowrap relative cursor-pointer capitalize text-light-color transition-all text-lg font-bold'
       >
         {props.title}
       </h1>

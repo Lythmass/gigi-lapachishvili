@@ -1,11 +1,12 @@
 import { motion } from 'framer-motion';
 import { useHome } from './useHome';
+import { HomeContent } from 'pages';
 
 const Home = (props) => {
   const scope = useHome(props);
 
   return (
-    <div className=''>
+    <div className='h-full pb-16'>
       <motion.img
         ref={scope}
         onClick={() => props.setOpenNavBar(true)}
@@ -15,6 +16,7 @@ const Home = (props) => {
         src='images/menu.png'
         alt='menu'
       />
+      <HomeContent />
     </div>
   );
 };

@@ -12,7 +12,7 @@ export const NavBar = (props) => {
   return (
     <div
       ref={scope}
-      className='bg-dark-color flex flex-col gap-[8rem] h-screen absolute w-full md:relative md:w-[20rem] md:border-r md:border-r-banana p-10'
+      className='bg-dark-color flex flex-col gap-[8rem] h-screen absolute w-full md:relative md:w-[20rem] md:border-r md:border-r-light-color p-10'
     >
       <div className='flex w-full justify-between items-center gap-10'>
         <h1 className='text-4xl leading-[3rem] text-crimson font-black'>
