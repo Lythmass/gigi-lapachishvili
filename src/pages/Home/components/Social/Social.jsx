@@ -1,6 +1,21 @@
+import { SocialContent } from 'config';
 import { motion } from 'framer-motion';
 
 export const Social = () => {
+  const socials = SocialContent.map((social) => {
+    return (
+      <a href={social.link} target='_blank' rel='noreferrer'>
+        <motion.img
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          className='w-8 h-8'
+          src={`images/${social.img}.png`}
+          alt={social.img}
+        />
+      </a>
+    );
+  });
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -8,28 +23,7 @@ export const Social = () => {
       transition={{ duration: 1 }}
       className='flex gap-5'
     >
-      <a
-        href='https://www.linkedin.com/in/glapachishvili/'
-        target='_blank'
-        rel='noreferrer'
-      >
-        <motion.img
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className='w-8 h-8'
-          src='images/linkedin.png'
-          alt='linkedin'
-        />
-      </a>
-      <a href='https://github.com/Lythmass' target='_blank' rel='noreferrer'>
-        <motion.img
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          className='w-8 h-8'
-          src='images/github.png'
-          alt='github'
-        />
-      </a>
+      {socials}
     </motion.div>
   );
 };

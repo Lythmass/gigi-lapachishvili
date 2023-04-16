@@ -11,7 +11,7 @@ export const HomeContent = () => {
   return (
     <div className='w-full h-full flex flex-col justify-center items-center gap-5'>
       <motion.img
-        initial={{ opacity: 0, y: '-10rem' }}
+        initial={{ opacity: 0, y: '-5rem' }}
         animate={{ opacity: 1, y: 0 }}
         transition={transition}
         src='images/gamer.png'
