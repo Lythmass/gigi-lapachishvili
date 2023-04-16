@@ -1,8 +1,8 @@
 import { HomeContent } from 'pages';
 
-const Home = (props) => {
+const Home = () => {
   return (
-    <div className='h-full pb-20'>
+    <div id='home' className='w-full h-full px-10 pt-10 pb-20'>
       <HomeContent />
     </div>
   );
