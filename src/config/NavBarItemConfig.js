@@ -8,6 +8,10 @@ export const NavBarItemConfig = [
     img: 'id-card',
   },
   {
+    title: 'skills',
+    img: 'skills',
+  },
+  {
     title: 'portfolio',
     img: 'briefcase',
   },

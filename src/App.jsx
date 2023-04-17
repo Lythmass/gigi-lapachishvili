@@ -1,5 +1,5 @@
 import { NavBar } from 'components';
-import { Home, About } from 'pages';
+import { Home, About, Skills } from 'pages';
 import { useApp } from 'hooks';
 import { motion } from 'framer-motion';
 
@@ -21,6 +21,7 @@ function App() {
         />
         <Home init={particlesInit} />
         <About />
+        <Skills />
       </div>
     </div>
   );
