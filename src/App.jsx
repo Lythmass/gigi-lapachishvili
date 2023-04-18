@@ -2,6 +2,8 @@ import { NavBar } from 'components';
 import { Home, About, Skills } from 'pages';
 import { useApp } from 'hooks';
 import { motion } from 'framer-motion';
+import Particles from 'react-particles';
+import { ParticlesConfig } from 'config';
 
 function App() {
   const { openNavBar, setOpenNavBar, particlesInit, scope } = useApp();
@@ -10,6 +12,11 @@ function App() {
     <div className='flex bg-dark-color h-screen w-full overflow-x-hidden relative'>
       <NavBar setOpenNavBar={setOpenNavBar} openNavBar={openNavBar} />
       <div className='h-screen w-full overflow-x-hidden relative'>
+        <Particles
+          className='z-0 opacity-50'
+          init={particlesInit}
+          options={ParticlesConfig}
+        />
         <motion.img
           ref={scope}
           onClick={() => setOpenNavBar(true)}
