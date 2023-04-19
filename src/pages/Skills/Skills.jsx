@@ -26,8 +26,8 @@ export const Skills = () => {
   });
 
   return (
-    <div id='skills' className='w-full h-1/2'>
-      <div className='flex p-20 gap-10 flex-col justify-center items-center w-full min-h-full'>
+    <div id='skills' className='w-full min-h-full'>
+      <div className='flex p-20 gap-10 flex-col justify-center items-center w-full min-h-[50vh]'>
         <h1 className='text-2xl lg:text-3xl xl:text-4xl text-center text-light-color'>
           Front-end
         </h1>
@@ -35,7 +35,7 @@ export const Skills = () => {
           {diplaySkillsTop}
         </div>
       </div>
-      <div className='p-20 gap-10 relative w-full min-h-full bg-light-color flex flex-col justify-center items-center'>
+      <div className='p-20 gap-10 relative w-full min-h-[50vh] bg-light-color flex flex-col justify-center items-center'>
         <h1 className='text-2xl lg:text-3xl xl:text-4xl text-center text-dark-color'>
           Back-end
         </h1>
