@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 import { useNavBarConfig } from './useNavBarConfig';
 
 export const NavBar = (props) => {
-  const items = NavBarItemConfig.map((item) => {
-    return <NavBarItem title={item.title} img={item.img} />;
+  const items = NavBarItemConfig.map((item, index) => {
+    return <NavBarItem key={index} title={item.title} img={item.img} />;
   });
   const { handleClick, size, scope } = useNavBarConfig(props);
 

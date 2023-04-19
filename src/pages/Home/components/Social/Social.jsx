@@ -2,9 +2,9 @@ import { SocialContent } from 'config';
 import { motion } from 'framer-motion';
 
 export const Social = () => {
-  const socials = SocialContent.map((social) => {
+  const socials = SocialContent.map((social, index) => {
     return (
-      <a href={social.link} target='_blank' rel='noreferrer'>
+      <a key={index} href={social.link} target='_blank' rel='noreferrer'>
         <motion.img
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

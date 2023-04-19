@@ -10,8 +10,8 @@ module.exports = {
         teal: '#08D9D6',
         banana: '#FFFFCC',
       },
-      screens: {
-        xs: '380px',
+      gridTemplateColumns: {
+        'auto-fit': 'repeat(auto-fit, minmax(10rem, 1fr))',
       },
     },
   },

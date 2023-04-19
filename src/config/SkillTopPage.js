@@ -1,4 +1,4 @@
-export const Skill = [
+export const SkillTopPage = [
   {
     title: 'HTML',
     img: 'html',
@@ -36,4 +36,4 @@ export const Skill = [
   },
 ];
 
-export default Skill;
+export default SkillTopPage;
