@@ -3,3 +3,4 @@ export { About, AboutHeader, AboutParagraph, VerticalLine } from './About';
 export { Skills, SkillItem } from './Skills';
 export { Portfolio, Card } from './Portfolio';
 export { Education, EducationHeader, EducationParagraphs } from './Education';
+export { HireMe } from './HireMe';

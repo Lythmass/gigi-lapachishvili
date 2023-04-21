@@ -25,7 +25,7 @@ export const EducationParagraphs = () => {
         Subjects that I have learned here include: Algorithms and data
         structures, competitive programming in C++, principles of OOP (Java),
         relational databases (MSSQL), data science in Python, computer security,
-        Artificial Intelligence and much more...
+        Artificial Intelligence, English C1 level and much more.
       </p>
     </>
   );
