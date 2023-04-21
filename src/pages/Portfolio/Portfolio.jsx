@@ -22,27 +22,29 @@ export const Portfolio = () => {
   return (
     <div
       id='portfolio'
-      className='w-full min-h-full flex flex-col justify-evenly items-center py-20'
+      className='w-full min-h-full flex flex-col justify-center items-center gap-10 py-20'
     >
       <motion.h1
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ x: '100%', opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{
-          duration: 0.5,
+          type: 'spring',
+          stiffness: 90,
         }}
-        className='text-light-color text-4xl'
+        viewport={{ once: true }}
+        className='text-light-color text-4xl text-center'
       >
         Take a look at my projects...
       </motion.h1>
       <motion.div
-        initial={{ opacity: 0, x: '-100%' }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ x: '-100%', opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
         transition={{
-          duration: 0.5,
-          delay: 0.5,
+          type: 'spring',
+          stiffness: 50,
         }}
         viewport={{ once: true }}
-        className='w-[85%] sm:w-[70%] lg:w-1/2 xl:w-[70%] h-full py-5 gap-5 border-2 border-crimson rounded-2xl text-center'
+        className='w-[85%] select-none sm:w-[70%] lg:w-1/2 xl:w-[70%] h-full py-5 gap-5 border-2 border-crimson rounded-2xl text-center'
       >
         <Carousel
           infiniteLoop={true}

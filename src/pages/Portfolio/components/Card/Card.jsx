@@ -12,7 +12,7 @@ export const Card = (props) => {
       <div className='w-full mb-4 h-full flex flex-col xl:flex-row justify-center items-center xl:items-start gap-5'>
         <div className='flex flex-col gap-4  w-full xl:w-1/2'>
           <img
-            className='rounded-xl select-none w-full h-[20rem] object-cover'
+            className='rounded-xl w-full h-[20rem] object-cover'
             src={`images/${props.img}.png`}
             alt={props.title}
           />

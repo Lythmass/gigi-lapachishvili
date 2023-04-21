@@ -1,5 +1,5 @@
 import { NavBar } from 'components';
-import { Home, About, Skills, Portfolio } from 'pages';
+import { Home, About, Skills, Portfolio, Education } from 'pages';
 import { useApp } from 'hooks';
 import { motion } from 'framer-motion';
 import Particles from 'react-particles';
@@ -30,6 +30,7 @@ function App() {
         <About />
         <Skills />
         <Portfolio />
+        <Education />
       </div>
     </div>
   );
