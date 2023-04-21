@@ -33,7 +33,7 @@ export const ParticlesConfig = {
     detectsOn: 'window',
     events: {
       onClick: {
-        enable: true,
+        enable: false,
         mode: 'push',
       },
       onDiv: {
@@ -46,8 +46,8 @@ export const ParticlesConfig = {
         enable: true,
         mode: 'repulse',
         parallax: {
-          enable: false,
-          force: 2,
+          enable: true,
+          force: 10,
           smooth: 10,
         },
       },

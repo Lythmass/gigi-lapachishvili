@@ -4,3 +4,4 @@ export { default as SocialContent } from './SocialContent';
 export { default as SkillTopPage } from './SkillTopPage';
 export { default as SkillBottomPage } from './SkillBottomPage';
 export { default as Cards } from './Cards';
+export { default as Validation } from './Validation';
