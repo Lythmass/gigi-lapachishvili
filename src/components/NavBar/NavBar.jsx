@@ -4,15 +4,22 @@ import { motion } from 'framer-motion';
 import { useNavBarConfig } from './useNavBarConfig';
 
 export const NavBar = (props) => {
-  const items = NavBarItemConfig.map((item, index) => {
-    return <NavBarItem key={index} title={item.title} img={item.img} />;
-  });
   const { handleClick, size, scope } = useNavBarConfig(props);
+  const items = NavBarItemConfig.map((item, index) => {
+    return (
+      <NavBarItem
+        key={index}
+        title={item.title}
+        img={item.img}
+        handleClick={handleClick}
+      />
+    );
+  });
 
   return (
     <div
       ref={scope}
-      className='z-[100] bg-dark-color flex flex-col gap-[8rem] h-screen absolute w-full md:relative md:w-[20rem] md:border-r md:border-r-light-color p-10'
+      className='z-[300] bg-dark-color flex flex-col gap-[8rem] h-screen absolute w-full md:relative md:w-[20rem] md:border-r md:border-r-light-color p-10'
     >
       <div className='flex w-full justify-between items-center gap-10'>
         <h1 className='text-4xl leading-[3rem] text-crimson font-black'>

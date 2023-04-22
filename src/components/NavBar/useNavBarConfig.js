@@ -14,12 +14,12 @@ export const useNavBarConfig = (props) => {
 
   useEffect(() => {
     if (props.openNavBar && size < 768) {
-      animate(scope.current, { x: 0 }, { type: 'spring', damping: 13 });
+      animate(scope.current, { x: 0 }, { duration: 0.25 });
     }
   }, [props.openNavBar, size]);
 
   const handleClick = () => {
-    animate(scope.current, { x: '-100%' });
+    animate(scope.current, { x: '-100%' }, { duration: 0.25 });
     props.setOpenNavBar(false);
   };
 

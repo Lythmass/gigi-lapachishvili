@@ -25,9 +25,9 @@ export const HireMe = () => {
           viewport={{ once: true }}
           ref={ref}
           onSubmit={methods.handleSubmit(sendEmail)}
-          className='mt-20 w-[85%] sm:w-[70%] xl:w-[60%] m-auto flex flex-col lg:gap-4'
+          className='mt-20 w-[85%] sm:w-[70%] xl:w-[60%] m-auto flex flex-col gap-4'
         >
-          <div className='min-w-full flex flex-col lg:flex-row lg:gap-5'>
+          <div className='min-w-full flex flex-col lg:flex-row gap-4 lg:gap-5'>
             <Input type='name' />
             <Input type='email' />
           </div>

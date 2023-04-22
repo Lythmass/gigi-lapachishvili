@@ -3,7 +3,7 @@ import { ContactModal } from 'components';
 import { motion } from 'framer-motion';
 const HireMeHeader = (props) => {
   return (
-    <>
+    <div className='w-full'>
       {props.showModal &&
         createPortal(
           <ContactModal
@@ -20,11 +20,11 @@ const HireMeHeader = (props) => {
           stiffness: 90,
         }}
         viewport={{ once: true }}
-        className='text-light-color text-4xl text-center px-20'
+        className='text-light-color text-4xl text-center px-10'
       >
         Get in touch with me.
       </motion.h1>
-    </>
+    </div>
   );
 };
 
