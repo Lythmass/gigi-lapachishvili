@@ -1,6 +1,7 @@
 import { ContactInfo, Input, Message, Submit, HireMeHeader } from 'pages';
 import { FormProvider } from 'react-hook-form';
 import useHireMe from './useHireMe';
+import { motion } from 'framer-motion';
 
 export const HireMe = () => {
   const { methods, ref, sendEmail, showModal, setShowModal, result } =
@@ -14,7 +15,14 @@ export const HireMe = () => {
         showModal={showModal}
       />
       <FormProvider {...methods}>
-        <form
+        <motion.form
+          initial={{ x: '-100%', opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{
+            type: 'spring',
+            stiffness: 90,
+          }}
+          viewport={{ once: true }}
           ref={ref}
           onSubmit={methods.handleSubmit(sendEmail)}
           className='mt-20 w-[85%] sm:w-[70%] xl:w-[60%] m-auto flex flex-col lg:gap-4'
@@ -27,7 +35,7 @@ export const HireMe = () => {
           <Message />
           <Submit />
           <ContactInfo />
-        </form>
+        </motion.form>
       </FormProvider>
     </div>
   );
