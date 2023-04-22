@@ -19,8 +19,10 @@ export const useNavBarConfig = (props) => {
   }, [props.openNavBar, size]);
 
   const handleClick = () => {
-    animate(scope.current, { x: '-100%' }, { duration: 0.25 });
-    props.setOpenNavBar(false);
+    if (size < 768) {
+      animate(scope.current, { x: '-100%' }, { duration: 0.25 });
+      props.setOpenNavBar(false);
+    }
   };
 
   return { handleClick, size, scope };
