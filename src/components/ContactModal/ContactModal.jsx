@@ -12,7 +12,7 @@ export const ContactModal = (props) => {
         transition={{ type: 'spring', stiffness: 90 }}
         className='flex justify-center items-center rounded-xl w-full min-h-full bg-crimson'
       >
-        <h1 className='text-light-color text-2xl text-center px-[3rem]'>
+        <h1 className='text-light-color text-2xl text-center px-[3rem] font-Raleway'>
           {props.result === 'OK'
             ? 'Your email was successfully sent!'
             : props.result}

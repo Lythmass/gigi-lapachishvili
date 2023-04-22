@@ -32,7 +32,7 @@ export const HomeContent = () => {
         whileInView={{ opacity: 1, x: 0 }}
         transition={transition}
         viewport={{ once: true }}
-        className='text-light-color md:text-lg lg:text-xl xl:px-[25%] text-center'
+        className='text-light-color font-Montserrat md:text-lg lg:text-xl xl:px-[25%] text-center'
       >
         I am a Full Stack Web Developer, trying to keep up with the rapid growth
         of the modern technology...

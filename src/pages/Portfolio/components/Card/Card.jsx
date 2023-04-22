@@ -5,8 +5,8 @@ export const Card = (props) => {
     return <Button key={index} link={button.link} text={button.title} />;
   });
   return (
-    <div className='flex flex-col px-4 h-full w-full justify-center items-center gap-5'>
-      <h1 className='text-light-color text-3xl tracking-widest'>
+    <div className='flex font-Montserrat flex-col px-4 h-full w-full justify-center items-center gap-5'>
+      <h1 className='text-light-color text-3xl tracking-widest font-Raleway'>
         {props.title}
       </h1>
       <div className='w-full mb-4 h-full flex flex-col xl:flex-row justify-center items-center xl:items-start gap-5'>

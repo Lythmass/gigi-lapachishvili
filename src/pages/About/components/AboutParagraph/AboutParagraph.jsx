@@ -31,7 +31,7 @@ export const AboutParagraph = (props) => {
           damping: 10,
         }}
         viewport={{ once: true }}
-        className='text-lg text-dark-color lg:px-[20%] xl:px-[30%] text-center'
+        className='text-lg font-Montserrat text-dark-color lg:px-[20%] xl:px-[30%] text-center'
       >
         {props.text}
       </motion.p>

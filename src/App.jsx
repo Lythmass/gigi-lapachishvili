@@ -9,7 +9,7 @@ function App() {
   const { openNavBar, setOpenNavBar, particlesInit, scope } = useApp();
 
   return (
-    <div className='flex bg-dark-color h-screen w-full overflow-x-hidden relative'>
+    <div className='flex font-Raleway bg-dark-color h-screen w-full overflow-x-hidden relative'>
       <NavBar setOpenNavBar={setOpenNavBar} openNavBar={openNavBar} />
       <div className='h-screen w-full overflow-x-hidden relative'>
         <Particles

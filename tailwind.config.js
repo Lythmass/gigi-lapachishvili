@@ -7,11 +7,13 @@ module.exports = {
         'dark-color': '#252A34',
         'light-color': '#EAEAEA',
         crimson: '#FF2E63',
-        teal: '#08D9D6',
-        banana: '#FFFFCC',
       },
       gridTemplateColumns: {
         'auto-fit': 'repeat(auto-fit, minmax(10rem, 1fr))',
+      },
+      fontFamily: {
+        Montserrat: ['Montserrat', 'sans-serif'],
+        Raleway: ['Raleway', 'sans-serif'],
       },
     },
   },
