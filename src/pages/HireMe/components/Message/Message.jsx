@@ -11,8 +11,9 @@ export const Message = () => {
       <textarea
         {...methods.register('message', Validation['message'])}
         placeholder="We'd like to hire you"
+        name='message'
         id='message'
-        className='text-light-color p-3 w-full h-[15rem] rounded-md bg-transparent border border-light-color focus:outline-none focus:border-crimson transition-all'
+        className='text-white p-3 w-full h-[15rem] rounded-md bg-transparent border border-light-color focus:outline-none focus:border-crimson transition-all'
       />
       <p className='text-crimson h-3'>
         {methods.formState.errors['message']?.message}

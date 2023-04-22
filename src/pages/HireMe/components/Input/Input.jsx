@@ -1,13 +1,9 @@
 import { Validation } from 'config';
-import { useFormContext } from 'react-hook-form';
+import useInput from './useInput';
 
 export const Input = (props) => {
-  const methods = useFormContext();
-  const placeholders = {
-    name: 'Jon Doe',
-    email: 'jon@doe.com',
-    title: 'Hello',
-  };
+  const { methods, placeholders, names } = useInput();
+
   return (
     <div
       className={`flex flex-col gap-1 w-full ${
@@ -18,15 +14,16 @@ export const Input = (props) => {
         {props.type !== 'title' ? `your ${props.type}` : props.type}
       </label>
       <input
-        {...methods?.register(props.type, Validation[props.type])}
+        {...methods?.register(names[props.type], Validation[props.type])}
         autoComplete='off'
-        className='bg-transparent rounded-md h-10 border border-light-color px-3 text-light-color focus:outline-none focus:border-crimson transition-all'
+        name={names[props.type]}
+        className='bg-transparent rounded-md h-10 border border-light-color px-3 text-white focus:outline-none focus:border-crimson transition-all'
         placeholder={placeholders[props.type]}
         id={props.type}
         type={props.type}
       />
       <p className='text-crimson h-3'>
-        {methods?.formState.errors[props.type]?.message}
+        {methods?.formState.errors[names[props.type]]?.message}
       </p>
     </div>
   );
