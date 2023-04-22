@@ -1,10 +1,13 @@
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 const useHireMe = () => {
+  const [showModal, setShowModal] = useState(false);
+  const [result, setResult] = useState('');
   const methods = useForm({ mode: 'onChange' });
   const ref = useRef();
+
   const sendEmail = () => {
     emailjs
       .sendForm(
@@ -15,14 +18,16 @@ const useHireMe = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          setShowModal(true);
+          setResult(result.text);
         },
         (error) => {
-          console.log(error.text);
+          setShowModal(true);
+          setResult(error.text);
         }
       );
   };
-  return { methods, ref, sendEmail };
+  return { methods, ref, sendEmail, showModal, setShowModal, result };
 };
 
 export default useHireMe;

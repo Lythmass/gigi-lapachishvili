@@ -1,12 +1,20 @@
 import { ContactInfo, Input, Message, Submit } from 'pages';
 import { FormProvider } from 'react-hook-form';
 import useHireMe from './useHireMe';
+import { createPortal } from 'react-dom';
+import { ContactModal } from 'components';
 
 export const HireMe = () => {
-  const { methods, ref, sendEmail } = useHireMe();
+  const { methods, ref, sendEmail, showModal, setShowModal, result } =
+    useHireMe();
 
   return (
     <div id='hire me' className='w-full min-h-screen py-20'>
+      {showModal &&
+        createPortal(
+          <ContactModal result={result} setShowModal={setShowModal} />,
+          document.body
+        )}
       <h1 className='text-light-color text-4xl text-center px-20'>
         Get in touch with me.
       </h1>
