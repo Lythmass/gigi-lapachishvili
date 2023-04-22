@@ -9,7 +9,11 @@ export const Input = (props) => {
     title: 'Hello',
   };
   return (
-    <div className='flex flex-col gap-1 w-full'>
+    <div
+      className={`flex flex-col gap-1 w-full ${
+        props.type !== 'title' && 'lg:w-[calc(50%-0.6rem)]'
+      }`}
+    >
       <label className='text-light-color capitalize' htmlFor={props.type}>
         {props.type !== 'title' ? `your ${props.type}` : props.type}
       </label>
