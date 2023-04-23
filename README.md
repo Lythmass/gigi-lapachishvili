@@ -1,70 +1,76 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Gigi Lapachishvili Portfolio
 
-## Available Scripts
+This is a React project showcasing my projects, skills, education and my business contact information.
 
-In the project directory, you can run:
+## Table of Contents
 
-### `npm start`
+* [Gains](#gains)
+* [Technologies and Libraries](#technologies-and-libraries)
+* [Features](#features)
+* [Color Reference](#color-reference)
+* [Folder Structure](#folder-structure)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Gains
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+After completing this project, I have learned how to use several packages, such as framer motion which is very useful for animations, React Responsive Carousel for easly customizable carousels and React-router-hash-link which helps smooth scrolling between sections.
 
-### `npm test`
+During this project, I have maintained clean code principles and consistent folder structure for better understanding of this repository.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies and Libraries
 
-### `npm run build`
+**Environment:** React, TailwindCSS, JavaScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+**Packages:**
+- [React Responsive Carousel (Projects carousel)](https://www.npmjs.com/package/react-responsive-carousel)
+- [React-hook-form (Validation)](https://react-hook-form.com/)
+- [Framer Motion (Animations)](https://www.framer.com/motion/)
+- [React-router-hash-link (Navigation)](https://www.npmjs.com/package/react-router-hash-link)
+- [Particles.js (Background effect)](https://particles.js.org/)
+- [EmailJS (Contact me data sender)](https://www.emailjs.com/)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Animations
+- Responsive carousel
+- Contact me form with validations
+- Live preview
+- Fully responsive
+- Cross platform
+- Smooth navigation
+- Clean code
 
-### `npm run eject`
+## Color Reference
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+| Color             | Hex                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+| Dark Color | ![#252A34](https://via.placeholder.com/10/252A34?text=+) #252A34 |
+| Light Color | ![#EAEAEA](https://via.placeholder.com/10/EAEAEA?text=+) #EAEAEA |
+| Crimson | ![#FF2E63](https://via.placeholder.com/10/FF2E63?text=+) #FF2E63 |
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Folder Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
+├── public
+│   └── images
+├── src
+│   └── components
+│       └── GlobalComponent
+│           ├── GlobalComponent.jsx
+│           └── index.js
+├── config
+├── hooks
+└── pages
+    └── page
+        ├── PageComponents
+        ├── Page.jsx
+        └── index.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- .eslintrc.json
+- .prettierrc.json
+- jsconfig.json
+- package-lock.json
+- package.json
+- README.mds
+- tailwind.config.js
+```
